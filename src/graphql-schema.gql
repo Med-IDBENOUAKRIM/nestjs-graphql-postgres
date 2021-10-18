@@ -1,0 +1,22 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Person {
+  id: String!
+  firstName: String!
+  lastName: String!
+}
+
+type Query {
+  getAllPersons: [Person!]!
+}
+
+type Mutation {
+  createPerson(person: CreatePersonDTO!): Person!
+}
+
+input CreatePersonDTO {
+  firstName: String!
+  lastName: String!
+}
